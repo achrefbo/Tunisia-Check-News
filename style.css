@@ -11,11 +11,14 @@
   box-sizing: content-box;
   font-family: "Raleway", sans-serif;
 }
+/*------ header -------*/
 .header {
   display: flex;
-  justify-content: space-around;
-
+  justify-content: center;
   height: 80px;
+}
+.header-logo {
+  padding-right: 100px;
 }
 .header-navbar {
   display: flex;
@@ -29,7 +32,7 @@
 .header-navbar-items li {
   list-style: none;
   text-transform: uppercase;
-  padding: 20px;
+  padding: 30px;
 }
 .header-navbar-items li a {
   text-decoration: none;
@@ -49,10 +52,10 @@
 .header-navbar-items li a:hover {
   text-decoration: none;
 }
+/*-------- Slider -----------*/
 .slider {
   background: url(img/background.jpg);
   height: 860px;
-
   background-size: cover;
   background-repeat: none;
   display: flex;
@@ -87,8 +90,9 @@
 }
 /*------ Main Content css */
 .content-1,
-.content-3 {
-  padding: 0 100px;
+.content-3,
+.content-2 {
+  padding: 0 250px;
 }
 .content h2 {
   text-transform: uppercase;
@@ -104,7 +108,8 @@
 }
 .content-fake-news-article {
   padding: 10px;
-  width: 25%;
+
+  width: 30%;
   box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.61);
 }
 .content-fake-news-article-info {
@@ -130,7 +135,6 @@
   display: flex;
   justify-content: space-between;
 }
-
 .content-fake-news-article a {
   text-decoration: none;
   color: var(--color-red);
@@ -154,7 +158,6 @@
 /*---- Section 2 -------*/
 .content-2 {
   background: rgba(220, 220, 220, 0.377);
-  padding: 0px 100px;
 }
 /*------- Section  4 -----*/
 .content-4 {
@@ -200,38 +203,50 @@
   width: 70%;
   background: none;
 }
+/*-------- Footer ---------*/
+
+.footer {
+  line-height: 50px;
+}
 .contact-info {
   display: flex;
-  justify-content: space-evenly;
-  padding: 50px 50px;
+  justify-content: space-around;
+  padding: 60px 250px;
+
   background: url(img/background-footer.jpg);
   color: white;
 }
 .contact-description {
-  width: 30%;
+  width: 50%;
 }
 .contact-description h4 {
   font-size: 2rem;
-  line-height: 50px;
+  line-height: 100px;
 }
 .contact-description p {
   font-size: 1.2rem;
   line-height: 25px;
   padding: 20px 0px;
+  width: 70%;
 }
 .contact-description li {
   font-size: 1.2rem;
   line-height: 25px;
   list-style: none;
 }
+.contact-form {
+  width: 50%;
+}
 .contact-formulaire {
-  width: 100%;
   display: grid;
-  justify-content: stretch;
 }
 .contact-formulaire input {
-  height: 40px;
-  margin-bottom: 10px;
+  height: 55px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+.contact-formulaire textarea {
+  resize: none;
 }
 .submit-btn {
   margin-top: 10px;
@@ -240,7 +255,171 @@
   height: 40px;
   width: 60%;
 }
-.footer{
-    text-align: center;
-    line-height: 50px;
+.social-icons {
+  padding: 10px 0px;
 }
+.social-icons a {
+  padding-left: 10px;
+}
+.copyright {
+  text-align: center;
+}
+/*----------------- A Propos -------------------------------*/
+.a-propos-slider {
+  background: url(img/Back-ground-header.png);
+  height: 537px;
+
+  width: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.a-propos-slider h2 {
+  color: white;
+  font-size: 2rem;
+  text-transform: uppercase;
+  opacity: 0.6;
+  padding-left: 300px;
+}
+.a-propos-slider p {
+  color: white;
+  font-size: 3rem;
+  line-height: 100px;
+  font-weight: bold;
+  padding-left: 300px;
+}
+
+.a-propos-content {
+  display: flex;
+  justify-content: center;
+padding: 50px 0;
+
+}
+.a-prpos-vid{
+  width: 40%;
+ 
+}
+
+.A{
+ 
+  height: 450px;
+  background:   url(img/contour-video.png);
+  background-repeat: no-repeat ;
+  margin-left: 300px;
+  width: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+video{
+ width: 430px;
+ height: 430px;
+}
+.B{
+  margin-top: -200px;
+  height: 300px;
+  background: var(--color-gris);
+  width: 600px;
+}
+.a-propos-desc{
+  
+  padding-right: 400px;
+  padding-left: 50px;
+line-height: 25px;
+  
+}
+.a-propos-desc h2, .a-propos-objectifs h2{
+  font-size: 2rem;
+color: var(--color-red);
+text-decoration: none;
+text-align: left;
+}
+.a-propos-desc p ,.a-propos-objectifs p {
+padding-bottom: 20px;
+  }
+.objectifs{
+  padding: 50px 0px;
+  display: flex;
+  justify-content: space-evenly;
+  background: rgba(128, 128, 128, 0.171) ;
+}
+  .a-propos-objectifs{
+
+    padding-left: 300px;
+   
+    line-height: 25px;
+    width: 50%;
+  }
+  .objectifs-logo{
+    display: flex;
+    align-items: center;
+   width: 50%;
+    justify-content: left;
+   
+    
+  }
+  /*--------- Contact page --------*/
+  .contact-cordonnes{
+    padding: 50px 300px;
+    text-align: center;
+  }
+  .contact-cordonnes h3{
+    line-height: 50px;
+    text-transform: uppercase;
+
+  }
+  .contact-cordonnes p{
+    line-height: 25px;
+    text-transform: uppercase;
+
+  }
+ 
+  .contact-email{
+    color: var(--color-red);
+    font-weight: 900;
+
+   
+  }
+  .adresse-mail{
+   line-height: 50px;
+   padding: 5px;
+    border-radius: 15px;
+    background: rgba(22, 34, 104, 0.247);
+  }
+  .contact-formulaire-page{
+    padding: 50px 300px;
+
+  }
+  .formulaire{
+    width: 100%;
+  }
+  .formulaire-inline{
+    display: flex;
+    justify-content: space-between;
+  }
+  .formulaire textarea{
+    width: 100%;
+    border: solid 1px rgba(156, 155, 154, 0.438);
+    resize: none;
+  }
+  .formulaire input{
+    width:49%;
+    margin-bottom: 10px;
+    line-height: 50px;
+    border: solid 1px rgba(156, 155, 154, 0.438);
+  }
+  .button-submit-form{
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+    align-items: flex-end;
+  }
+  .formulaire button{
+    background: var(--color-red);
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    border-style: none;
+  }
