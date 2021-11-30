@@ -32,7 +32,7 @@
 .header-navbar-items li {
   list-style: none;
   text-transform: uppercase;
-  padding: 30px;
+  padding: 20px;
 }
 .header-navbar-items li a {
   text-decoration: none;
@@ -57,6 +57,7 @@
   background: url(img/background.jpg);
   height: 860px;
   background-size: cover;
+  background-position: center;
   background-repeat: none;
   display: flex;
   align-items: center;
