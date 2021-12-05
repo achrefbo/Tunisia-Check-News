@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 :root {
   font-size: 16px;
   --color-red: #ef4657;
@@ -9,17 +9,17 @@
   padding: 0px;
   margin: 0px;
   box-sizing: content-box;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 /*------ header -------*/
 .header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   height: 80px;
+ 
+  padding: 0px 300px ;
 }
-.header-logo {
-  padding-right: 100px;
-}
+
 .header-navbar {
   display: flex;
   justify-content: center;
@@ -37,6 +37,7 @@
 .header-navbar-items li a {
   text-decoration: none;
   color: black;
+  
 }
 .header-navbar-items li a:hover {
   color: var(--color-red);
@@ -93,7 +94,7 @@
 .content-1,
 .content-3,
 .content-2 {
-  padding: 0 250px;
+  padding: 0 300px;
 }
 .content h2 {
   text-transform: uppercase;
@@ -105,7 +106,7 @@
 }
 .content-fake-news {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .content-fake-news-article {
   padding: 10px;
@@ -192,7 +193,9 @@
 .newsletter-input input {
   height: 48px;
   border: none;
+  outline: none;
 }
+
 .newsletter-input-send {
   width: 30%;
   background: var(--color-gris);
@@ -212,7 +215,7 @@
 .contact-info {
   display: flex;
   justify-content: space-around;
-  padding: 60px 250px;
+  padding: 60px 300px;
 
   background: url(img/background-footer.jpg);
   color: white;
@@ -245,9 +248,11 @@
   height: 55px;
   margin-bottom: 15px;
   width: 100%;
+  outline: none;
 }
 .contact-formulaire textarea {
   resize: none;
+  outline: none;
 }
 .submit-btn {
   margin-top: 10px;
